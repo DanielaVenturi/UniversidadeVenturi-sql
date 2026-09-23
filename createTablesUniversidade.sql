@@ -122,4 +122,14 @@
 	GO
 	ALTER TABLE MATRICULA ADD NOTAEXAME FLOAT;
 	GO
-	
+	    
+        INSERT MATRICULA ( MATRICULA, CURSO, MATERIA,PROFESSOR,PERLETIVO)
+    VALUES (1,'ENG','BDA',1,2025)
+
+    INSERT ALUNOS (NOME) VALUES ('Daniela Venturi');
+     INSERT ALUNOS (NOME) VALUES ('Carolina Vitória de Brum');
+      INSERT ALUNOS (NOME) VALUES ('Ayme Costa');
+       INSERT ALUNOS (NOME) VALUES ('Maria Luiza Slva e Silva');
+        INSERT ALUNOS (NOME) VALUES ('Mariana Borges');
+      
+      SELECT* from ALUNOS

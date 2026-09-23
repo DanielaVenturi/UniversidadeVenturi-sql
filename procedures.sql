@@ -1,5 +1,7 @@
 
 
+
+
     CREATE PROCEDURE sp_CadastraNotas
 	(
 		@MATRICULA INT,
@@ -107,3 +109,20 @@ EXEC sp_CadastraNotas @MATRICULA = 1,      -- int
 
 
 select * from Cursos
+
+GO
+
+CREATE PROCEDURE procCadastrarAluno
+(
+    @NOME VARCHAR(50)
+    
+)
+AS
+BEGIN
+
+    INSERT INTO ALUNOS (NOME)
+    VALUES (@NOME);
+
+END
+GO
+
