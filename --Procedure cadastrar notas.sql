@@ -1,6 +1,4 @@
-
-
-
+--Procedure cadastrar notas
 
     CREATE PROCEDURE sp_CadastraNotas
 	(
