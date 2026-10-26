@@ -1,13 +1,12 @@
-/*procedure de matrícula automática*/
-
+--02_matricula_automatica.sql
 
 USE UniversidadeVenturi;
 GO
 
-CREATE OR ALTER PROCEDURE procMATRICULAALUNO
+CREATE PROCEDURE procMATRICULAALUNO
     @NOME VARCHAR(50),
     @CURSO CHAR(3),
-    @PERLETIVO CHAR(4)
+    @PERLETIVO INT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -30,7 +29,11 @@ BEGIN
         WHERE CURSO = @CURSO
     )
     BEGIN
-        RAISERROR('Este curso nao possui materias cadastradas.', 16, 1);
+        RAISERROR(
+            'Este curso nao possui materias cadastradas.',
+            16,
+            1
+        );
         RETURN;
     END;
 
@@ -74,3 +77,4 @@ BEGIN
     END CATCH;
 END;
 GO
+
