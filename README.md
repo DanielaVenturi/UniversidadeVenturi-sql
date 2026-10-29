@@ -38,6 +38,9 @@ Desenvolver um banco de dados acadêmico para gerenciar alunos, cursos, professo
 | `05_consultas.sql` | Contém consultas para visualizar os dados. |
 | `06_nota_exame.sql` | Cria a procedure para lançar a nota do exame e recalcular o resultado. |
 
+**Modelagem do Banco de Dados**
+![](modelagem/modelagem.png)
+
 ## 5. Ordem de execução
 
 Execute os arquivos nesta ordem, em uma instância do SQL Server:
